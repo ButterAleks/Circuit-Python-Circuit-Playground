@@ -23,7 +23,11 @@ import neopixel
 pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=0.03)
 
 while True:
-    pixels.fill((255, 0, 0))
+    pixels.fill((255, 255, 0))
+    pixels[0] = (130, 0, 150)
+    pixels[9] = (130, 0, 150)
+    pixels[4] = (130, 0, 150)
+    pixels[5] = (130, 0, 150)
     time.sleep(0.5)
     pixels.fill((0, 0, 0))
     time.sleep(0.5)
